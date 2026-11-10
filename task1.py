@@ -41,3 +41,7 @@ def sort_book_words(books):
 
 
 sort_book_words(books)
+
+with open('books.txt', 'w', encoding='utf-8') as f:
+    for book in books:
+        f.write(f'{book}\n')
